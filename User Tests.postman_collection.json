@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "176dd930-300f-4888-8e57-80cd1c0f7dd4",
+		"name": "User Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24910996"
+	},
+	"item": [
+		{
+			"name": "GET USERS",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();\r",
+							"console.log(jsonData);\r",
+							"\r",
+							"//Verify the api has a response code of 200\r",
+							"pm.test(\"Verify Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Verify ‘User 6’ is present in the response\r",
+							"pm.test(\"Verify User 6 is present in the response\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"User 6\");\r",
+							"    \r",
+							"});\r",
+							"\r",
+							"//Count the number of objects in the response\r",
+							"\r",
+							"var numberofrecords= jsonData.length;\r",
+							"\r",
+							"pm.test(\"The number of objects in the response is = \"+ numberofrecords, function(){\r",
+							"\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fakerestapi.azurewebsites.net/api/v1/Users",
+					"protocol": "https",
+					"host": [
+						"fakerestapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"Users"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
