@@ -1,257 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230409 12:31:54.916" rpa="false" schemaversion="3">
-<suite id="s1" name="Login" source="C:\Users\HP\Desktop\Betika\BetikaTest\BetikaTest\Tests\Login.robot">
-<test id="s1-t1" name="User logs in incorrect credentials" line="6">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230410 22:54:56.961" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="C:\Users\HP\Desktop\Final Betika\Betika\Tests\Login.robot">
+<test id="s1-t1" name="User logs in incorrect credentials" line="10">
 <kw name="Opening Browser" library="keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.betika.com/en-ke/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230409 12:31:55.371" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
-<status status="PASS" starttime="20230409 12:31:55.371" endtime="20230409 12:32:10.402"/>
+<msg timestamp="20230410 22:54:57.350" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
+<status status="PASS" starttime="20230410 22:54:57.350" endtime="20230410 22:55:05.174"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230409 12:32:10.402" endtime="20230409 12:32:10.701"/>
+<status status="PASS" starttime="20230410 22:55:05.174" endtime="20230410 22:55:05.322"/>
 </kw>
-<status status="PASS" starttime="20230409 12:31:55.371" endtime="20230409 12:32:10.701"/>
+<status status="PASS" starttime="20230410 22:54:57.350" endtime="20230410 22:55:05.322"/>
 </kw>
 <kw name="User inputs username" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:10.711" endtime="20230409 12:32:10.791"/>
+<status status="PASS" starttime="20230410 22:55:05.322" endtime="20230410 22:55:05.385"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <arg>0723107746</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:10.791" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
-<status status="PASS" starttime="20230409 12:32:10.791" endtime="20230409 12:32:11.006"/>
+<msg timestamp="20230410 22:55:05.385" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
+<status status="PASS" starttime="20230410 22:55:05.385" endtime="20230410 22:55:05.713"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:10.711" endtime="20230409 12:32:11.006"/>
+<status status="PASS" starttime="20230410 22:55:05.322" endtime="20230410 22:55:05.713"/>
 </kw>
 <kw name="User inputs wrong password" library="keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>Qwerty123!!</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:11.011" level="INFO">Typing text 'Qwerty123!!' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20230409 12:32:11.011" endtime="20230409 12:32:11.211"/>
+<msg timestamp="20230410 22:55:05.713" level="INFO">Typing text 'Qwerty123!!' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20230410 22:55:05.713" endtime="20230410 22:55:05.925"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:11.006" endtime="20230409 12:32:11.211"/>
+<status status="PASS" starttime="20230410 22:55:05.713" endtime="20230410 22:55:05.925"/>
 </kw>
 <kw name="User clicks login" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:11.211" endtime="20230409 12:32:11.241"/>
+<status status="PASS" starttime="20230410 22:55:05.925" endtime="20230410 22:55:06.008"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:11.241" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
-<status status="PASS" starttime="20230409 12:32:11.241" endtime="20230409 12:32:11.435"/>
+<msg timestamp="20230410 22:55:06.008" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
+<status status="PASS" starttime="20230410 22:55:06.008" endtime="20230410 22:55:06.114"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:11.211" endtime="20230409 12:32:11.435"/>
+<status status="PASS" starttime="20230410 22:55:05.925" endtime="20230410 22:55:06.114"/>
 </kw>
 <kw name="User should be notified of incorrect details" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//p[@class='message']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:11.435" endtime="20230409 12:32:12.375"/>
+<status status="PASS" starttime="20230410 22:55:06.114" endtime="20230410 22:55:06.938"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:11.435" endtime="20230409 12:32:12.375"/>
+<status status="PASS" starttime="20230410 22:55:06.114" endtime="20230410 22:55:06.938"/>
 </kw>
-<status status="PASS" starttime="20230409 12:31:55.371" endtime="20230409 12:32:12.375"/>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230410 22:55:06.938" endtime="20230410 22:55:10.524"/>
+</kw>
+<status status="PASS" starttime="20230410 22:54:57.350" endtime="20230410 22:55:10.524"/>
 </test>
-<test id="s1-t2" name="User Logs in successfully" line="13">
+<test id="s1-t2" name="User Logs in successfully" line="18">
 <kw name="Opening Browser" library="keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.betika.com/en-ke/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230409 12:32:12.386" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
-<status status="PASS" starttime="20230409 12:32:12.386" endtime="20230409 12:32:22.561"/>
+<msg timestamp="20230410 22:55:10.524" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
+<status status="PASS" starttime="20230410 22:55:10.524" endtime="20230410 22:55:18.007"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230409 12:32:22.561" endtime="20230409 12:32:22.875"/>
+<status status="PASS" starttime="20230410 22:55:18.007" endtime="20230410 22:55:18.192"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:12.386" endtime="20230409 12:32:22.881"/>
+<status status="PASS" starttime="20230410 22:55:10.524" endtime="20230410 22:55:18.192"/>
 </kw>
 <kw name="User inputs username" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:22.881" endtime="20230409 12:32:22.951"/>
+<status status="PASS" starttime="20230410 22:55:18.192" endtime="20230410 22:55:18.242"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <arg>0723107746</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:22.951" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
-<status status="PASS" starttime="20230409 12:32:22.951" endtime="20230409 12:32:23.231"/>
+<msg timestamp="20230410 22:55:18.242" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
+<status status="PASS" starttime="20230410 22:55:18.242" endtime="20230410 22:55:18.442"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:22.881" endtime="20230409 12:32:23.231"/>
+<status status="PASS" starttime="20230410 22:55:18.192" endtime="20230410 22:55:18.442"/>
 </kw>
 <kw name="User inputs password" library="keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>27301198</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:23.235" level="INFO">Typing text '27301198' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20230409 12:32:23.235" endtime="20230409 12:32:23.431"/>
+<msg timestamp="20230410 22:55:18.442" level="INFO">Typing text '27301198' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20230410 22:55:18.442" endtime="20230410 22:55:18.594"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:23.235" endtime="20230409 12:32:23.431"/>
+<status status="PASS" starttime="20230410 22:55:18.442" endtime="20230410 22:55:18.594"/>
 </kw>
 <kw name="User clicks login" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:23.431" endtime="20230409 12:32:23.491"/>
+<status status="PASS" starttime="20230410 22:55:18.594" endtime="20230410 22:55:18.633"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:23.491" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
-<status status="PASS" starttime="20230409 12:32:23.491" endtime="20230409 12:32:23.701"/>
+<msg timestamp="20230410 22:55:18.633" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
+<status status="PASS" starttime="20230410 22:55:18.633" endtime="20230410 22:55:18.728"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:23.431" endtime="20230409 12:32:23.701"/>
+<status status="PASS" starttime="20230410 22:55:18.594" endtime="20230410 22:55:18.728"/>
 </kw>
 <kw name="User should be logged in successfully" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit button button__secondary share-code-button']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:23.705" endtime="20230409 12:32:26.375"/>
+<status status="PASS" starttime="20230410 22:55:18.734" endtime="20230410 22:55:21.120"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:23.705" endtime="20230409 12:32:26.375"/>
+<status status="PASS" starttime="20230410 22:55:18.734" endtime="20230410 22:55:21.120"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230410 22:55:21.120" endtime="20230410 22:55:23.482"/>
 </kw>
 <tag>Login</tag>
-<status status="PASS" starttime="20230409 12:32:12.386" endtime="20230409 12:32:26.375"/>
+<status status="PASS" starttime="20230410 22:55:10.524" endtime="20230410 22:55:23.482"/>
 </test>
-<test id="s1-t3" name="User places bet successfully" line="21">
+<test id="s1-t3" name="User places bet successfully" line="27">
 <kw name="Opening Browser" library="keywords">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://www.betika.com/en-ke/login</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230409 12:32:26.383" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
-<status status="PASS" starttime="20230409 12:32:26.381" endtime="20230409 12:32:40.941"/>
+<msg timestamp="20230410 22:55:23.482" level="INFO">Opening browser 'chrome' to base url 'https://www.betika.com/en-ke/login'.</msg>
+<status status="PASS" starttime="20230410 22:55:23.482" endtime="20230410 22:55:30.964"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230409 12:32:40.941" endtime="20230409 12:32:41.246"/>
+<status status="PASS" starttime="20230410 22:55:30.964" endtime="20230410 22:55:31.100"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:26.381" endtime="20230409 12:32:41.246"/>
+<status status="PASS" starttime="20230410 22:55:23.482" endtime="20230410 22:55:31.100"/>
 </kw>
 <kw name="User inputs username" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:41.251" endtime="20230409 12:32:41.326"/>
+<status status="PASS" starttime="20230410 22:55:31.100" endtime="20230410 22:55:31.139"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='e.g. 0712 234567']</arg>
 <arg>0723107746</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:41.326" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
-<status status="PASS" starttime="20230409 12:32:41.326" endtime="20230409 12:32:41.638"/>
+<msg timestamp="20230410 22:55:31.139" level="INFO">Typing text '0723107746' into text field '//input[@placeholder='e.g. 0712 234567']'.</msg>
+<status status="PASS" starttime="20230410 22:55:31.139" endtime="20230410 22:55:31.361"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:41.251" endtime="20230409 12:32:41.638"/>
+<status status="PASS" starttime="20230410 22:55:31.100" endtime="20230410 22:55:31.361"/>
 </kw>
 <kw name="User inputs password" library="keywords">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@type='password']</arg>
 <arg>27301198</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:41.646" level="INFO">Typing text '27301198' into text field '//input[@type='password']'.</msg>
-<status status="PASS" starttime="20230409 12:32:41.646" endtime="20230409 12:32:42.486"/>
+<msg timestamp="20230410 22:55:31.369" level="INFO">Typing text '27301198' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20230410 22:55:31.369" endtime="20230410 22:55:31.531"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:41.646" endtime="20230409 12:32:42.486"/>
+<status status="PASS" starttime="20230410 22:55:31.369" endtime="20230410 22:55:31.531"/>
 </kw>
 <kw name="User clicks login" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:42.497" endtime="20230409 12:32:42.571"/>
+<status status="PASS" starttime="20230410 22:55:31.531" endtime="20230410 22:55:31.571"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit session__form__button login button button__secondary']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:42.571" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
-<status status="PASS" starttime="20230409 12:32:42.571" endtime="20230409 12:32:42.905"/>
+<msg timestamp="20230410 22:55:31.571" level="INFO">Clicking element '//button[@class='button account__payments__submit session__form__button login button button__secondary']'.</msg>
+<status status="PASS" starttime="20230410 22:55:31.571" endtime="20230410 22:55:31.670"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:42.496" endtime="20230409 12:32:42.911"/>
+<status status="PASS" starttime="20230410 22:55:31.531" endtime="20230410 22:55:31.670"/>
 </kw>
 <kw name="User should be logged in successfully" library="keywords">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>//button[@class='button account__payments__submit button button__secondary share-code-button']</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230409 12:32:43.074" endtime="20230409 12:32:45.431"/>
+<status status="PASS" starttime="20230410 22:55:31.670" endtime="20230410 22:55:33.493"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:43.074" endtime="20230409 12:32:45.431"/>
+<status status="PASS" starttime="20230410 22:55:31.670" endtime="20230410 22:55:33.493"/>
 </kw>
-<kw name="User selects bet to add to betslip" library="keywords">
+<kw name="User selects the lowest odds" library="keywords">
+<kw name="Create List" library="BuiltIn">
+<var>${my_list}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230410 22:55:33.493" level="INFO">${my_list} = []</msg>
+<status status="PASS" starttime="20230410 22:55:33.493" endtime="20230410 22:55:33.493"/>
+</kw>
+<for flavor="IN">
+<var>${value}</var>
+<value>@{my_list}</value>
+<iter>
+<var name="${value}"/>
 <kw name="Set Variable" library="BuiltIn">
-<var>${odds}</var>
-<arg>2.09</arg>
+<var>${locator}</var>
+<arg>xpath=//span[normalize-space()='${value}']</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20230409 12:32:45.437" level="INFO">${odds} = 2.09</msg>
-<status status="PASS" starttime="20230409 12:32:45.436" endtime="20230409 12:32:45.437"/>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//span[normalize-space()='${odds}']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:45.437" level="INFO">Clicking element '//span[normalize-space()='2.09']'.</msg>
-<status status="PASS" starttime="20230409 12:32:45.437" endtime="20230409 12:32:46.001"/>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${element}</var>
+<arg>Element Should Be Visible</arg>
+<arg>${locator}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:45.436" endtime="20230409 12:32:46.006"/>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element}' == 'True'</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${element}' == 'True'</arg>
+<arg>Exit For Loop</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
+</kw>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
+</iter>
+<status status="NOT RUN" starttime="20230410 22:55:33.501" endtime="20230410 22:55:33.501"/>
+</for>
+<status status="PASS" starttime="20230410 22:55:33.493" endtime="20230410 22:55:33.502"/>
 </kw>
 <kw name="User enters amount" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//input[@placeholder='Enters stake']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:46.011" level="INFO">Clicking element '//input[@placeholder='Enters stake']'.</msg>
-<status status="PASS" starttime="20230409 12:32:46.007" endtime="20230409 12:32:46.907"/>
+<msg timestamp="20230410 22:55:33.502" level="INFO">Clicking element '//input[@placeholder='Enters stake']'.</msg>
+<msg timestamp="20230410 22:55:33.904" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230410 22:55:33.904" level="FAIL">Element with locator '//input[@placeholder='Enters stake']' not found.</msg>
+<status status="FAIL" starttime="20230410 22:55:33.502" endtime="20230410 22:55:33.904"/>
 </kw>
 <kw name="Clear Element Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='Enters stake']</arg>
 <doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" starttime="20230409 12:32:46.907" endtime="20230409 12:32:47.011"/>
+<status status="NOT RUN" starttime="20230410 22:55:33.912" endtime="20230410 22:55:33.912"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder='Enters stake']</arg>
 <arg>1</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:47.011" level="INFO">Typing text '1' into text field '//input[@placeholder='Enters stake']'.</msg>
-<status status="PASS" starttime="20230409 12:32:47.011" endtime="20230409 12:32:47.211"/>
+<status status="NOT RUN" starttime="20230410 22:55:33.912" endtime="20230410 22:55:33.912"/>
 </kw>
-<status status="PASS" starttime="20230409 12:32:46.007" endtime="20230409 12:32:47.211"/>
+<status status="FAIL" starttime="20230410 22:55:33.502" endtime="20230410 22:55:33.912"/>
 </kw>
 <kw name="User clicks on place bet" library="keywords">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>//button[@type='normal']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230409 12:32:47.211" level="INFO">Clicking element '//button[@type='normal']'.</msg>
-<status status="PASS" starttime="20230409 12:32:47.211" endtime="20230409 12:32:47.336"/>
-</kw>
-<status status="PASS" starttime="20230409 12:32:47.211" endtime="20230409 12:32:47.336"/>
+<status status="NOT RUN" starttime="20230410 22:55:33.912" endtime="20230410 22:55:33.912"/>
 </kw>
 <kw name="Bet should be placed successfuly" library="keywords">
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>//p[@class='message']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<msg timestamp="20230409 12:32:52.581" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230409 12:32:52.581" level="FAIL">Element '//p[@class='message']' not visible after 5 seconds.</msg>
-<status status="FAIL" starttime="20230409 12:32:47.336" endtime="20230409 12:32:52.584"/>
+<status status="NOT RUN" starttime="20230410 22:55:33.912" endtime="20230410 22:55:33.912"/>
 </kw>
-<status status="FAIL" starttime="20230409 12:32:47.336" endtime="20230409 12:32:52.584"/>
-</kw>
-<status status="FAIL" starttime="20230409 12:32:26.381" endtime="20230409 12:32:52.591">Element '//p[@class='message']' not visible after 5 seconds.</status>
+<status status="FAIL" starttime="20230410 22:55:23.482" endtime="20230410 22:55:33.912">Element with locator '//input[@placeholder='Enters stake']' not found.</status>
 </test>
 <doc>Betika Login Test</doc>
-<status status="FAIL" starttime="20230409 12:31:54.923" endtime="20230409 12:32:52.592"/>
+<status status="FAIL" starttime="20230410 22:54:56.961" endtime="20230410 22:55:33.920"/>
 </suite>
 <statistics>
 <total>

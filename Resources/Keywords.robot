@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    String
+Library    Collections
 
 
 *** Keywords ***
@@ -28,11 +29,14 @@ User inputs wrong password
 User should be notified of incorrect details
   Wait Until Element Is Visible  //p[@class='message']
 
-User selects bet to add to betslip
-  ${odds}=   Set Variable  2.09
-  Click Element  //span[normalize-space()='${odds}']
-
-
+User selects the lowest odds
+    ${my_list}=    Create List
+    FOR    ${value}    IN    @{my_list}
+        ${locator}=    Set Variable    xpath=//span[normalize-space()='${value}']
+        ${element}=    Run Keyword And Return Status    Element Should Be Visible    ${locator}
+        Run Keyword If    '${element}' == 'True'    Click Element    ${locator}
+        Run Keyword If    '${element}' == 'True'    Exit For Loop
+    END
 
 User enters amount
   Click Element  //input[@placeholder='Enters stake']
