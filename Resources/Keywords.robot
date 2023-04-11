@@ -11,15 +11,16 @@ Opening Browser
 
 User inputs username
   Wait Until Element Is Visible  //input[@placeholder='e.g. 0712 234567']
-  Input Text  //input[@placeholder='e.g. 0712 234567']  0723107746
+  Input Text  //input[@placeholder='e.g. 0712 234567']  254735638271
 
 
 User inputs password
-  Input Text  //input[@type='password']  27301198
+  Input Text  //input[@type='password']  2020
 
 User clicks login
   Wait Until Element Is Visible  //button[@class='button account__payments__submit session__form__button login button button__secondary']
   Click Element  //button[@class='button account__payments__submit session__form__button login button button__secondary']
+
 User should be logged in successfully
   Wait Until Element Is Visible  //button[@class='button account__payments__submit button button__secondary share-code-button']
 
